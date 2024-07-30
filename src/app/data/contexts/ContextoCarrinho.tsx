@@ -10,7 +10,7 @@ interface ContextoCarrinhoProps {
     remover: (item: Produto) => void
 }
 
-const ContextoCarrinho = createContext<ContextoCarrinhoProps>({} as any)
+export const ContextoCarrinho = createContext<ContextoCarrinhoProps>({} as any)
 
 export function ProvedorCarrinho(props: any) {
     const [itens, setItens] = useState<ItemCarrinho[]>([]);

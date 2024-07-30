@@ -8,7 +8,7 @@ import produtos from "../data/constants/produtos";
 import CartaoProduto from "../components/produto/CartaoProduto";
 
 export default function Home() {
-  const { numero, incrementar, decrementar } = useCarrinho()
+  useCarrinho()
   return (
     <Pagina>
       <div className="flex gap-5 justify-center flex-wrap"></div>
